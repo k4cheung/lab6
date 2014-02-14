@@ -70,11 +70,14 @@ function randomizeColors(e) {
 
 function getColors(result) {
   var colors = result['colors'];
-    
-	$('body').css('background-color', colors[0]);
-	$('.thumbnail').css('background-color', colors[1]);
-	$('h1, h2, h3, h4, h5, h5').css('color', colors[2]);
-	$('p').css('color', colors[3]);
+  
+  console.log(colors.hex[0]);  
+	
+	
+	$('body').css('background-color', colors.hex[0]);
+	$('.thumbnail').css('background-color', colors.hex[1]);
+	$('h1, h2, h3, h4, h5, h5').css('color', colors.hex[2]);
+	$('p').css('color', colors.hex[3]);
 	$('.project img').css('opacity', .75);
   
 }
